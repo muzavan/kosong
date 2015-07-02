@@ -31,8 +31,8 @@ def uploadingFile(f):
 	name = 'level/'+str(datetime.datetime.now().time())+"_.png"
 	media = settings.MEDIA_ROOT
 	with open(media+"/"+name, 'wb+') as destination:
-        	for chunk in f.chunks():
-            		destination.write(chunk)
+        for chunk in f.chunks():
+            destination.write(chunk)
 
-        	destination.close()
-        	return name
+        destination.close()
+        return name

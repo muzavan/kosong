@@ -1,0 +1,13 @@
+#Settings
+kosong/settings.py
+
+#Phyton Compiled
+*.pyc
+
+#Static and Media File(s)
+local_static/**
+local_media/**
+
+#Image(s)
+*.png
+*.jpg
